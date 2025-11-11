@@ -1,11 +1,11 @@
 #  Sistema Bancário Simples em Python
 
-Este é um projeto que criei para treinar **funções**, **listas**, **dicionários** e **lógica de programação** em Python.  
+Projeto criado por mim para treinar **funções**, **listas**, **dicionários** e **lógica de programação** em Python.  
 O sistema simula um pequeno banco, com cadastro de usuário, login, depósito, pagamento e dicas de segurança.
 
----
 
-## Funcionalidades
+
+##  Funcionalidades
 
 - Cadastro de usuário com nome, CPF e senha  
 - Login de verificação de conta  
@@ -14,7 +14,7 @@ O sistema simula um pequeno banco, com cadastro de usuário, login, depósito, p
 - Mensagens de segurança para o usuário  
 - Sistema de menu interativo no terminal  
 
----
+
 
 ##  Conceitos praticados
 
@@ -25,31 +25,17 @@ O sistema simula um pequeno banco, com cadastro de usuário, login, depósito, p
 - Entrada e saída de dados  
 - Organização e modularização de código  
 
----
+
 
 ##  Como usar
 
-1. Execute o código no terminal (ou no VS Code, Thonny, etc).
-2. Cadastre um novo usuário.
-3. Acesse o menu e:
-   - Veja seu saldo ou deposite dinheiro.
-   - Realize pagamentos.
-   - Leia as dicas de proteção da conta.
-
----
-
-##  Exemplo de execução
-
-=============MENU=========
-seja bem-vindo ao nosso banco
-1 - ver sua conta
-2 - pagar contas
-3 - o que devo saber pra proteger minha conta?
-4 - sair
+1. Execute o código no terminal (ou no VS Code, Thonny, etc).  
+2. Cadastre um novo usuário.  
+3. Acesse o menu e escolha a opção desejada.
 
 
 
-## Autor
+##  Autor
 
-Feito por **Kevin Michael**  
- Projeto criado do zero, com pequenas melhorias feitas para praticar lógica e boas práticas em Python
+Feito por **Kevin Michael Pacheco**  
+ Projeto criado do zero, com pequenas melhorias para praticar lógica e boas práticas em Python.
