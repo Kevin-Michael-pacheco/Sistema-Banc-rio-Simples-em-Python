@@ -63,7 +63,7 @@ interação com o usuário via terminal
 
 🧑‍💻 Autor
 
-Projeto desenvolvido por Kevin, durante estudos de Python e POO.
+Projeto desenvolvido por Kevin Michael Pacheco, durante estudos de Python e POO.
 
 📄 Licença
 
