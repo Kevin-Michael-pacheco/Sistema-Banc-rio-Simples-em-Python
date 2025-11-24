@@ -1,97 +1,81 @@
-lista = []
-s=0
-def cadastro():
-    usuario = {}
-    no=str(input('digite o nome de usuario pra cadastra: '))
-    cpf=int(input('digite seu cpf: '))
-    senha=int(input('crie uma senha pra sua conta: '))
-    usuario['nome'] = no
-    usuario['cpf'] = cpf
-    usuario['senha'] = senha
-    lista.append(usuario)
-
-def login():
-    n= str(input('digite seu nome de usuario: '))
-    if n == lista[0]['nome']:
-        c_p_f=int(input('digite seu cpf: '))   
-        if c_p_f == lista[0]['cpf']:
-            s=int(input('digite sua senha: '))
-            if s == lista[0]['senha']:
-                print('login completo')
-         
-def interface(saldo):
-    print()
-    print('nome: ',lista[0]['nome'])
-    print()
-    print('seu saldo e de : ',saldo)
-    print()
-    print('deseja depositar algum valor na sua conta se sim digite 1 senão digite qualquer outro numero')
-    print()
-    opcao=int(input('digite uma opção: '))
-    if opcao == 1:
-        valor =int(input('digite o valor pra ser depositado: '))
-        s=int(input('digite sua senha pra confirmar o deposito: '))
-        if s ==lista[0]['senha']:
-            saldo+=valor
-            print()
-            print('saldo adicionado a conta tenha um bom dia')
-            print()
-        else:
-            print('senha incorreta tenete novamente')
-    else:
-        print()
-        print('tenha um bom dia')
-        print()
-    return saldo
+class conta:
+    def __init__(self):
+        self.dono =input('digite seu nome: ')
+        while True:
+            try:
+                self.saldo =float(input('digite o seu saldo: '))
+                break
+            except:
+                print('o saldo so poder ser numeros não letras')
+                continue
 
 
+    def depositar(self):
+        while True:
+            try:
+                n=int(input("quanto deseja depositar na conta:"))
+                if n >=1:
+                    self.saldo += n
+                    print('deposito realizado com sucesso')
+                    print(f'seu saldo  atual agora e de { self.saldo}')
+                    break
+                else:
+                    print('so e possivel adicionar na conta valores maiores que 0')
+                    break
+            except:
+                print('Erro digite apenas o valor em numero pra fazer o deposito')
+                continue
 
-def pagar(saldo):
-    nome=str(input('digite o nome de que vc deseja pagar: '))
-    conta=int(input('digite o numeros da conta da pessoa para realizar o pagamento: '))
-    v=float(input('digite o valor a ser pago pra essa pessoa: '))
-    pagar = saldo-v
-    if saldo < v:
-        print('saldo insuficiente pra realizar o pagamento')
-    else:
-        print('pagamento conculuido')
-        print('saldo restante de',pagar)
-        saldo=pagar
-    return saldo
+    def sacar(self):
+        while True:
+            try:
+                s=int(input('quanto deseja sacar da sua conta: '))
+                if s<= self.saldo:
+                    self.saldo -= s
+                    print('saque realizado')
+                    print(f"saldo restante de {self.saldo} reais")
+                    break
+                else:
+                    print("saldo insuficiente")
+                    break
+            except:
+                print(' Erro digite a penas numeros para fazer o saque')
+                continue
+            
+    def mostrar(self):
+        print(f'nome: {self.dono}')
+        print(f'saldo atual: {self.saldo}')
 
-def protecao():
-    print('não compartilhar sua senha com outras pessoa estranhas')
-    print()
-    print('não clicar em links suspeitos que podem ter virus')
-    print()
-    print('caso perca seu celular entre no nosso suporte atraves de outro celular o ou outro dispositivo e prove que e você')
-    print()
+c =conta()
 
-
-c = cadastro()
 while True:
-    print('=============MENU=========')
-    print('seja benvindo ao nosso banco')
-    print('o que deseja fazer digite um opção das opçoes abaixo')
-    print('1- ver sua conta')
-    print('2-pagar contas')
-    print('3-o que devo saber pra proteger minha conta ??')
-    print('4- sair')
-    print('=============================')
-    op=int(input('digite uma opção: '))
-    print()
+    try:
+        print('=========================Menu==============================')
+        print('1- conferir sua conta')
+        print('2- depositar dinheiro na sua conta')
+        print('3- sacar dinheiro da sua conta')
+        print("4- sair")
+        op=int(input('digite o numero da opção que deseja: '))
+        print('============================================================')
+    except:
+        print('digite apenas os numero das opçoes disponiveis')
+        continue
+     
     if op == 1:
-        s=interface(s)
+        c.mostrar()
     elif op == 2:
-        s=pagar(s)
+        c.depositar()
     elif op == 3:
-        prote=protecao()
+        c.sacar()
     elif op == 4:
         print('programa encerrado')
-        print()
         break
     else:
         print('opção invalida')
+
+
+        
+
 
 
 
