@@ -1,41 +1,70 @@
-#  Sistema Bancário Simples em Python
+💰 Sistema Bancário em Python (POO)
 
-Projeto criado por mim para treinar **funções**, **listas**, **dicionários** e **lógica de programação** em Python.  
-O sistema simula um pequeno banco, com cadastro de usuário, login, depósito, pagamento e dicas de segurança.
+Este é um mini-projeto desenvolvido para treinar Programação Orientada a Objetos (POO) em Python.
+O programa simula operações básicas de uma conta bancária através de um menu interativo no terminal.
+
+🚀 Funcionalidades
+
+Criar automaticamente uma conta através de inputs do usuário
+
+Depositar valores
+
+Sacar valores
+
+Consultar informações da conta
+
+Validação de entradas
+
+Tratamento de erros com try/except
+
+Regras de negócio simples (ex.: impedir saque maior que o saldo)
+
+🏗 Tecnologias Utilizadas
+
+Python 3
+
+Programação Orientada a Objetos (POO)
+
+Estruturas de repetição
+
+Tratamento de exceções
+
+📌 Como Executar
+
+Faça o download ou clone o repositório:
+
+git clone https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
 
 
+Entre na pasta do projeto:
 
-##  Funcionalidades
-
-- Cadastro de usuário com nome, CPF e senha  
-- Login de verificação de conta  
-- Depósito com confirmação de senha  
-- Pagamento com verificação de saldo  
-- Mensagens de segurança para o usuário  
-- Sistema de menu interativo no terminal  
+cd NOME_DO_REPOSITORIO
 
 
+Execute o arquivo principal:
 
-##  Conceitos praticados
+python main.py
 
-- Funções com retorno de valores  
-- Estruturas condicionais (`if/elif/else`)  
-- Estrutura de repetição (`while True`)  
-- Listas e dicionários  
-- Entrada e saída de dados  
-- Organização e modularização de código  
+🎯 Objetivo do Projeto
 
+Este projeto foi criado para treinar:
 
+criação de classes e métodos
 
-##  Como usar
+encapsulamento básico
 
-1. Execute o código no terminal (ou no VS Code, Thonny, etc).  
-2. Cadastre um novo usuário.  
-3. Acesse o menu e escolha a opção desejada.
+lógica de programação
 
+organização de código
 
+interação com o usuário via terminal
 
-##  Autor
+É um ótimo passo inicial para quem está começando com POO e deseja evoluir para projetos mais complexos.
 
-Feito por **Kevin Michael Pacheco**  
- Projeto criado do zero, com pequenas melhorias para praticar lógica e boas práticas em Python.
+🧑‍💻 Autor
+
+Projeto desenvolvido por Kevin, durante estudos de Python e POO.
+
+📄 Licença
+
+Este projeto é livre para uso e modificação com fins educacionais.
